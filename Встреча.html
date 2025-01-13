@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Встреча Одноклассников</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Встреча Одноклассников</h1>
+                <p>Ответь на вопрос и узнай когда встретимся</p>
+            </header>
+
+            <form id="questionnaire">
+                <!-- Вопрос 1 -->
+                <div class="question">
+                    <label for="name">Как тебя зовут</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя" required>
+                </div>
+
+                <!-- Вопрос 2 -->
+                <div class="question">
+                    <label for="class-year">В каком году ты закончил(а) школу?</label>
+                    <input type="number" id="class-year" name="class-year" placeholder="Например, 2010" required>
+                </div>
+
+                <!-- Вопрос 3 -->
+                <div class="question">
+                    <label for="memory">Твой самый запоминающийся момент из школы?</label>
+                    <textarea id="memory" name="memory" placeholder="Напиши здесь..." required></textarea>
+                </div>
+
+                 <!-- Вопрос 4 -->
+                  <div class="question">
+                    <label for="meeting-date">Когда тебе удобно встретиться</label>
+                    <select id="meeting-date" name="meeting-date" required>
+                        <option value="disabled selected">Выберите дату</option>
+                        <option value="weekend">На выходных</option>
+                        <option value="weekday">В будний день</option>
+                        <option value="no-preference">Не важно</option>
+                    </select>
+                  </div>
+
+                  <!-- Кнопка отправки -->
+                   <button type="submit">Отправить</button>  
+                   </form>
+
+                   <footer>
+                    <p> С нетерпением ждем встречи!</p>
+                   </footer>
+        </div>
+    </body>
+</html>
